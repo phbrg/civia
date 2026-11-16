@@ -23,10 +23,10 @@ export function Team() {
             <p className="mt-5 text-ink/75">Turma 3ESPS, FIAP. Global Solution 2026.2, desafio CitizenTech.</p>
           </div>
           <img
-            src={img('logo.png')}
+            src={img('astro.svg')}
             alt="Logo da equipe ASTRO"
             loading="lazy"
-            className="h-12 w-auto mix-blend-lighten"
+            className="h-12 w-auto"
           />
         </Reveal>
 

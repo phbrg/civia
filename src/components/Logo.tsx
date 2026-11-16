@@ -1,3 +1,5 @@
+import { img } from '../lib/img'
+
 /** Marca "C" com talho dourado, redesenhada em SVG a partir da apresentação. */
 export function Mark({ className = '' }: { className?: string }) {
   return (
@@ -13,18 +15,6 @@ export function Mark({ className = '' }: { className?: string }) {
 
 export function Logo({ className = '' }: { className?: string }) {
   return (
-    <span role="img" aria-label="CIVIA" className={`inline-flex items-center gap-[0.4em] ${className}`}>
-      <Mark className="h-[1.7em] w-auto" />
-      <span
-        aria-hidden="true"
-        className="inline-flex items-end font-display font-semibold leading-none tracking-[0.14em]"
-      >
-        CIVI
-        <svg viewBox="0 0 30 24" className="ml-[0.06em] h-[0.74em] w-[0.95em]">
-          <path d="M3 24 15 2 27 24" fill="none" stroke="#F8F5EF" strokeWidth="5.6" />
-          <rect x="9" y="15" width="12" height="4.2" fill="#E4A80C" />
-        </svg>
-      </span>
-    </span>
+    <img src={img('civia-logo.svg')} alt="CIVIA" className={`inline-block h-[1.9em] w-auto ${className}`} />
   )
 }
